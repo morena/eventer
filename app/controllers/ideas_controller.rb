@@ -24,7 +24,7 @@ class IdeasController < ApplicationController
   # GET /ideas/new
   # GET /ideas/new.json
   def new
-    @idea = Idea.new
+    @idea = Idea.new #instance variable. can be accessed from idea view
 
     respond_to do |format|
       format.html # new.html.erb
